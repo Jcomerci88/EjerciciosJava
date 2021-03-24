@@ -1,0 +1,76 @@
+        ¿Qué es la convención "CamelCase"?
+El nombre se debe a que las mayúsculas y minúsculas forman una silueta de camello  a lo largo de una palabra en CamelCase . El nombre CamelCase se traduce a caja tipográfica
+
+Existen dos tipos de CamelCase:
+
+UpperCamelCase, cuando la primera letra de cada una de las palabras es mayúscula. Ejemplo: PandaSocialMedia.
+lowerCamelCase, igual que la anterior solo la primera letra es minúscula. Ejemplo: pandaSocialMedia.
+
+ camelCase      =>   firstName
+
+        ¿Cuántas clases se escriben por archivo .java?
+!!!!Un archivo . java puede tener más de una clase. La única condición es que sólo debe haber una clase public con el mismo nombre del archivo!!!!
+
+        ¿Cómo se escriben las clases en Java? ¿Cómo van las mayúsculas y minúsculas?
+
+Los nombres de las clases deben ser sustantivos, en mayúsculas y minúsculas, con la primera letra de cada palabra interna en mayúscula.
+
+        ¿Cómo se escriben los paquetes? ¿Cómo van las  mayúsculas y minúscculas?
+El prefijo de un nombre de paquete único siempre se escribe en letras ASCII en minúsculas y debe ser uno de los nombres de dominio de nivel superior, como por ejemplo: com, edu, gov, mil, net, org.
+
+Los componentes posteriores del nombre del paquete varían de acuerdo con las convenciones internas de nombres de la organización.
+Por ejemplo:
+
+com.sun.eng
+com.apple.quicktime.v2
+// java.lang packet in JDK
+java.lang
+
+
+        ¿Cómo se escriben los atributos? ¿Cómo van las mayúsculas y minúsculas?
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx , igual que las variables?
+
+        ¿Cómo se escriben los métodos? ¿Cómo van las mayúsculas y minúsculas?
+
+Los métodos deben ser verbos, en mayúsculas y minúsculas, con la primera letra de cada palabra interna (a partir de la segunda) en mayúscula.
+
+
+        ¿Cómo se escriben los parámetros y variables? ¿Cómo van las mayúsculas y minúsculas?
+
+Los nombres de las variables deben ser cortos pero significativos.
+
+No debería comenzar con un guión bajo (‘_’) o caracteres, como por ejemplo, un signo de dólar ‘$’.
+Debe ser mnemotécnico, es decir, diseñado para indicar al observador casual la intención de su uso.
+Se deben evitar los nombres de variable de un carácter, excepto para variables temporales.
+Los nombres comunes para las variables temporales son: i, j, k, m y n para enteros; c, d y e para los caracteres.
+
+        ¿Cómo se tabulan las clases y los métodos?
+xxxxxxxxxxxxxxxxxxxxxx
+        ¿Cómo se tabulan los bloques de código (como los if, for, switch, etc)?
+xxxxxxxxxxxxxxxx
+supongo cada 4 como marca tab
+
+        ¿Dónde se ubican las llaves de las clases y de los métodos?
+ Los bloques de código englobados entre llaves seguirán las siguientes reglas:
+
+La llave de apertura irá ubicada al final de la primera línea.
+La llave de cierre irá sola en una línea, alineada con la misma columna que la primera línea del bloque de código.
+Todas las sentencias de tipo if, while, for while o ifElse tendrán una llave de apertura y una de cierre
+Las sentencias entre las llaves tendrán un nivel más de sangría que las llaves.
+Ejemplo:
+
+static public int SumaMatriz(int[] matriz) {
+   int suma = 0;
+   for(int i = 0; i < matriz.length; i++) {
+      suma += matriz[i];
+   }
+   return suma;
+}
+
+        En los métodos y los paréntesis para indicar los parámetros, ¿dónde se agrega un espacio en blanco?
+No hay espacios en blanco entre el nombre del metodo y el parentesis que abre la lista de parametros
+
+        En los operadores (como if, switch, for) y los paréntesis para indicar parámetros, ¿dónde se agrega un espacio en blanco?
+Se deja un espacio entre el operador y el parentesis
+

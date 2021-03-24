@@ -1,0 +1,61 @@
+Preguntas
+¿Qué son los tipos primitivos en Java?
+
+Los tipos de datos primitivos en java son aquellos definidos por el lenguaje en particular, por eso son llamados primitivos,
+de alguna forma son los tipos de datos mas básicos permitidos. Estos tipos de datos son los siguientes:
+
+Carácter:
+char
+Lógico:
+boolean
+Numéricos:
+Enteros:
+byte
+short
+int
+long
+Decimales:
+float
+double
+
+
+¿Qué clases en Java representan a cada tipo primitivo?
+Se llaman igual con la primer letra en mayuscula
+
+¿Qué es el autoboxing en Java?
+Autoboxing es el proceso por el cual un tipo primitivo es automáticamente encapsulado (boxed) en su envoltura (wrapper)
+ de tipo equivalente cuando se necesita un objeto de ese tipo. No hay necesidad de obtener explícitamente un objeto.
+ Auto Boxing es usado para convertir tipos de datos primitivos a sus objetos de clase contenedor.
+
+int a = 56;
+Integer i = a; // Auto Boxing
+
+¿Qué es el unboxing en Java?
+
+El Auto-unboxing es el proceso por el cual el valor de un objeto encapsulado se extrae automáticamente (desencapsula) de
+ una envoltura de tipo cuando se necesita su valor. No hay necesidad de llamar a un método como intValue() o
+ doubleValue().
+Unboxing es opuesto a Auto Boxing, donde convertimos el objeto de la clase wrapper de nuevo a su tipo primitivo. Esto
+se hace automáticamente por JVM para que podamos usar las clases de envoltura para ciertas operaciones y luego
+ convertirlas de nuevo a tipos primitivos, ya que las primitivas resultan en un procesamiento más rápido. Por ejemplo :
+
+Integer s = 45;
+int a = s; auto UnBoxing;
+
+¿Cuál es la diferencia entre usar un tipo primitivo y la clase que lo representa?
+
+las diferencias más notables entre los tipos primitivos y los objetos:
+
+Los tipos primitivos siempre se pasan por valor, mientras que los objetos se pasan por referencia.
+Los tipos primitivos se copian por valor mientras que los objetos se copian por referencia.
+Los tipos primitivos se comparan por valor mientras que los objetos se comparan por referencia.
+Los tipos primitivos son inmutables, mientras el único elemento inmutable de un objeto es su referencia, pudiendo modificar su valor.
+
+
+
+¿Qué ocurre si a un tipo primitivo le intento asignar un null?
+Da error, no admiten nulls
+
+¿Qué ocurre si a un objeto que representa un tipo primitivo le intento asignar un null?
+Es un dato valido, pero si hay una operacion como suma hay error en ejecucion
+
