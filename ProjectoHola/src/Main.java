@@ -7,6 +7,9 @@ public class Main {
 }
 
 //Duda si hay que poner Main y despues main, porque puse dos veces main y me dio warning
+//Hay algo para dejar anotaciones en el proyecto?
+
+
 /*
 ¿Qué es el método main()?
 
