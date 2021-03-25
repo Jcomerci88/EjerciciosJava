@@ -1,0 +1,63 @@
+Preguntas
+ ¿Qué es UML?
+
+ un diagrama de clases en Lenguaje Unificado de Modelado (UML) es un tipo de diagrama de
+ estructura estática que describe la estructura de un sistema mostrando las clases del sistema,
+ sus atributos, operaciones (o métodos), y las relaciones entre los objetos.
+
+¿Para qué sirve?
+Nos proporciona una serie de herramientas que permiten mostrar el programa en sus diferentes etapas o procesos,
+delimitarlos y organizarlos de tal forma que sean entendibles por la persona que va a desarrollar el sistema.¿Qué
+es un diagrama de clases y para qué sirve?
+
+¿Qué es la herencia en objetos y para qué sirve?
+ Es el mecanismo por el cual una clase permite heredar las características (atributos y métodos) de otra clase.
+ La herencia permite que se puedan definir nuevas clases basadas de unas ya existentes a fin de reutilizar el código,
+ generando así una jerarquía de clases dentro de una aplicación. Si una clase deriva de otra, esta hereda sus atributos
+  y métodos y puede añadir nuevos atributos, métodos o redefinir los heredados.
+
+  !!!!!!!!!!!!!!!!!superclase o principal = abstract????? solo cuando no se va a crear el objeto para nada
+  cuando la superclase solo se usa para tener atributos en comun y no tener repeticion de codigo
+  si se lo quiero sacar como seria?
+
+¿Qué elementos se heredan de una clase?
+Atributos y metodos
+
+¿Qué hace el extends en Java?
+Realiza la herencia de la superclase
+¿Qué es la anotación @Overrides?
+
+La sentencia @Override hace uso de la sintaxis de comentarios en Java. Esta oración le permite al compilador de Java
+ saber que deseas anular un método existente de una clase primaria (es decir, sobrescribirá cómo funciona una función
+  en esta clase mientras exista en la clase primaria)
+
+
+  !!! se usa cuando se hay herencia o es cuando se usa un metodo originario de java???!!!!!!!!!!!!!!!
+
+La anotación @Override simplemente se utiliza, para forzar al compilador a comprobar en tiempo de compilación que
+ estás sobrescribiendo correctamente un método, y de este modo evitar errores en tiempo de ejecución, los cuales
+ serían mucho más difíciles de detectar.
+
+Por ejemplo, si fueras a sobrescribir el método toString() de la clase Object
+
+
+¿Qué es el método toString()?
+
+En Java por defecto toda clase hereda de 'Object' si no especificamos un 'extends'.
+
+La clase Object tiene entre otros un método llamado 'toString', por defecto retorna el nombre de la clase que se ha
+instanciado y la dirección de memoria del mismo. Veamos con un ejemplo dicha información.
+
+Es muy común sobreescribir el método 'toString' en nuestras clases para que nos provea una información más significativa.
+ Modifiquemos la clase Persona sobreescribiendo el método toString:
+
+
+!!!!!!!!!!!!!!!!!!!!!!Si no uso el override?????
+
+¿Qué significa que un atributo sea private?
+
+private: El campo o método sólo es visible dentro de la clase donde se define
+
+¿Para que sirve el new en Java?
+, con este comando le decimos a Java que vamos a crear un nuevo objeto de una clase en especifico y le enviamos
+los parámetros (en caso de ser necesario) según el constructor
