@@ -1,0 +1,136 @@
+¿Qué es un Array en Java?
+Una array o arreglo es una colección de variables del mismo tipo, a la que se hace referencia por un nombre común.
+En Java, los arrays pueden tener una o más dimensiones, aunque el array unidimensional es el más común.
+El tamaño de un array debe especificarse mediante un valor int y no, long o short
+Una variable array en Java se declara como otras variables con corchetes [] después del tipo de datos.
+Las variables en el array están ordenadas y cada una tiene un índice que comienza desde 0.
+
+
+¿Cómo se construyen los arrays?
+tipo_dato nombre_array[];
+nombre_array = new tipo_dato[tamanio];
+simplificado
+tipo_dato nombre_array[] =  new tipo_dato[tamanio];
+
+
+¿Cómo se agregan elementos a un array?
+Array en Java es un objeto contenedor que contiene un número fijo de elementos del mismo tipo de datos.
+La longitud del array se define mientras se declara el objeto array, y no puede ser modificada posteriormente.
+String[] arr = new String[5];
+arr[0] = "1";
+arr[1] = "2";
+arr[2] = "3";
+arr[3] = "4";
+arr[4] = "5";
+
+¿Qué hago si no conozco la cantidad de objetos a agregar al array al momento de construirlo?
+Se crea un ArrayList
+
+¿Qué es un ArrayList en Java?
+La clase ArrayList en Java es una clase que permite almacenar datos en memoria de forma similar a los Arrays, con la
+ventaja de que el numero de elementos que almacena, lo hace de forma dinámica, es decir, no es necesario declarar su
+tamaño como pasa con los Arrays
+Un beneficio de usar esta implementación de List es que las operaciones de acceso a elementos, capacidad y saber si
+es vacía o no se realizan de forma eficiente y rápida. Todo arraylist tiene una propiedad de capacidad, aunque cuando
+ se añade un elemento esta capacidad puede incrementarse. Java amplía automáticamente la capacidad de un arraylist a
+ medida que va resultando necesario.
+
+¿Qué es la interfaz List?
+Esta interface es la encargada de agrupar una colección de elementos en forma de lista, es decir, uno detrás de otro.
+ En una lista los elementos pueden ser accedidos por un índice que indica la posición del elemento en la colección.
+
+¿Cómo se agregan elementos a un List?
+add(): Inserta el elemento especificado en la posición especificada en esta lista. Cambia el elemento actualmente
+ en esa posición (si existe) y cualquier elemento posterior a la derecha (agrega uno a sus índices).
+
+¿Cómo se  quitan elementos de un List?
+Para eliminar un elemento de un ArrayList nos vamos a apoyar en el método .remove().
+El método .remove() de un ArrayList espera como parámetro el índice del elemento que queremos eliminar.
+
+¿Cuál es la diferencia entre Producto[] y ArrayList<Producto>?
+Producto arrayProducto[] = new Producto[numMax];
+ArrayList<Producto> arrayListProd = new ArrayList<Producto>();
+El primero es un array convencional ( hay que asignarle un numero maximo), puede almacenar numeros primitivos y objetos
+El otro es un array creado a partir de la clase Arraylist(implementa interfaz List), el tamaño es dinamico.
+Solo puede contenter objetos. Ofrece metodos para insertar o eliminar.
+Métodos útiles de ArrayList
+– add: añade un elemento
+– get: retorna un elemento
+– remove: elimina un elemento
+– set: cambia un elemento
+– size: longitud del array
+
+En la declaración ArrayList<Producto>, ¿para qué sirve el <Producto>?
+Para definir el objeto que va a contener el ArrayList
+
+¿Qué pasa si no se agrega <Producto> a la declaración?
+
+cuando no lo especifica, sería lo mismo que si especificara ArrayList <Object>, lo que significa que cualquier tipo
+de objeto podría agregarse a ArrayList. Las comprobaciones de tipo que se realizan al especificar una clase ocurren
+en el tiempo de compilación, no en el tiempo de ejecución
+
+!!!!!no me decia nada en la declaracion, pero no podia usar el for
+no se que otra cosa mas ocurre, no encontre mucho sobre esto
+
+¿Cómo se recorre un array?
+       for (int i = 0 ; i < arreglo.length ; i++) {
+            System.out.println("Elemento en indice " + i + ": " + arreglo[i]);
+
+        for (Producto regArray:arrayProducto
+        ) {
+            System.out.println(regArray);
+        }
+¿Cómo se recorre un List?
+para obtener el tamaño
+int size=al.size();
+y luego recorrerlo con un for normal
+
+o usar el for each (for sin indice) o foreach de ArrayList
+
+¿Cómo se recorre usando un for con un índice?
+
+El siguiente método es como hacer un ciclo for normal desde 0 hasta N. Para obtener la longitud del ArrayList
+ invocamos al método size, y para recorrer el ArrayList en Java hacemos un ciclo desde 0 hasta size.
+// Método 2
+for (int x = 0; x < canciones.size(); x++) {
+  String cancion = canciones.get(x);
+  System.out.println(cancion);
+}
+
+
+¿Cómo se recorre usando un foreach?
+
+// Método 3
+canciones.forEach((cancion) -> {
+  System.out.println(cancion);
+});
+
+¿Cómo se recorre usando un Iterator?
+
+        Iterator<Producto> it = arrayListProd.iterator();
+        while (it.hasNext())
+            System.out.println(it.next());
+
+¿Cómo se recorre usando streams?
+Arrays.stream(arrayProducto).forEach(System.out::println);
+
+¿Qué forma conviene usar?
+https://www.arquitecturajava.com/java-iterator-vs-foreach/
+Un iterador  es un objeto que nos permite  recorrer una lista y presentar por pantalla todos sus elementos .
+Dispone de dos métodos clave para realizar esta operación hasNext() y next().
+
+A partir de Java 5 existe otra forma de recorrer una lista que es mucho mas cómoda y compacta , el uso de bucles
+foreach. Un bucle foreach se parece mucho a un bucle for con la diferencia de que no hace falta una variable
+i de inicialización :
+
+Borrando elementos
+Vamos a borrar todas las personas que se llaman “Pedro” de la lista . La operación parece tan sencilla
+como hacer lo siguient
+Tenemos un problema ya que la operación que queríamos realizar es sencilla ,pero falla escandalosamente ya que
+estamos recorriendo y modificando la lista a la vez. Es aquí donde los iteradores pueden venir a rescatarnos.
+
+Java iterator y remove
+El interface Iterator dispone de un método adicional que permite eliminar objetos de una lista mientras
+la recorremos (el método remove)  :
+
+!!!!!!!!!!que son las expresiones lambda?

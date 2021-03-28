@@ -1,0 +1,51 @@
+Preguntas
+
+¿Qué es una interfaz? ¿Para qué sirven?
+Una interfaz en Java es una colección de métodos abstractos y propiedades constantes.
+
+En las interfaces se especifica qué se debe hacer pero no su implementación. Serán las clases que implementen estas
+ interfaces las que describen la lógica del comportamiento de los métodos.
+
+La principal diferencia entre interface y abstract es que un interface proporciona un mecanismo de encapsulación de
+los protocolos de los métodos sin forzar al usuario a utilizar la herencia.
+Ventajas
+El uso de las interfaces Java proporciona las siguientes ventajas:
+
+Organizar la programación.
+permiten declarar constantes que van a estar disponibles para todas las clases que queramos (implementando esa interfaz)
+Obligar a que ciertas clases utilicen los mismos métodos (nombres y parámetros).
+Establecer relaciones entre clases que no estén relacionadas.
+
+
+¿Cuál es la diferencia entre heredar de una clase e implementar una interfaz?
+
+Una interfaz es como un contrato, algo que permite utilizar objetos de ese tipo sin conocer la implementación,
+ y sin necesidad de que esté implementado.
+
+Las interfaces se suelen usar para segmentar el trabajo entre diferentes equipos.
+
+La herencia es un mecanismo para extender las funcionalidades y atributos de una clase.
+
+Una interfaz es un tipo especial de clase (que también puede tener herencia) que no posee funcionalidad implementada,
+solo define un conjunto de funcionalidades para las clases que la implementen (un conjunto de métodos con parámetros
+ pero sin código) .
+
+Una clase puede extender a otra clase, así como una interfaz puede extender a otra interfaz, indicando que hereda su
+comportamiento. Ademas, una clase puede implementar una o varias interfaces, indicando de este modo que implementará
+los métodos expuestos por dichas interfaces.
+
+
+¿Cuál es la ventaja de hacer que nuestros objetos implementen Comparable para ordenar?
+
+Use Comparable: si el objeto está bajo su control.
+si el comportamiento de comparación es el principal comportamiento de comparación.
+
+¿Cuál es la ventaja de usar un Comparator para ordenar?
+
+A diferencia de Comparable, Comparator es externo al tipo de elemento que estamos comparando.
+Es una clase separada.
+Creamos múltiples clases separadas (que implementan Comparator) para comparar por diferentes miembros.
+
+
+Use Comparator: si el objeto está fuera de su control y no puede hacer que implemente Comparable.
+cuando desee comparar un comportamiento diferente del comportamiento predeterminado (que se especifica en Comparable).
