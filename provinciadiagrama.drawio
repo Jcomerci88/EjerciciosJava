@@ -1,0 +1,19 @@
+<mxfile host="app.diagrams.net" modified="2021-04-02T03:39:46.129Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="huqxY8jJQw5gTedgc3Zg" version="14.5.3" type="github">
+  <diagram id="9oSQ4j19q1RiSqhT4-i-" name="Page-1">
+    <mxGraphModel dx="1422" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wPdFDBVkBHN9kFwtlekC-1" value="&lt;span style=&quot;color: rgb(51 , 51 , 51) ; font-family: &amp;#34;open sans&amp;#34; , sans-serif ; font-size: 14px ; text-align: left ; background-color: rgb(242 , 242 , 242)&quot;&gt;com.dosideas.domain.Provincia&lt;/span&gt;" style="html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="80" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wPdFDBVkBHN9kFwtlekC-2" value="«interface»&lt;br&gt;&lt;span style=&quot;color: rgb(51 , 51 , 51) ; font-family: &amp;#34;open sans&amp;#34; , sans-serif ; font-size: 14px ; text-align: left ; background-color: rgb(242 , 242 , 242)&quot;&gt;com.dosideas.service.impl.ProvinciaServiceImpl&lt;/span&gt;&lt;br&gt;" style="html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="170" width="270" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="wPdFDBVkBHN9kFwtlekC-4" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;span style=&quot;color: rgb(51 , 51 , 51) ; font-family: &amp;#34;open sans&amp;#34; , sans-serif ; font-size: 14px ; background-color: rgb(242 , 242 , 242)&quot;&gt;com.dosideas.service.ProvinciaService&lt;/span&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ buscarPorId(Long): Long&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="310" width="310" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
