@@ -1,1 +1,61 @@
-<mxfile host="app.diagrams.net" modified="2021-03-28T22:27:43.393Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" version="14.5.3" etag="m84xoPRDIIUIxgMcLM53" type="github"><diagram id="9oSQ4j19q1RiSqhT4-i-">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-04-13T14:53:30.697Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="k9Zv7el3StVyCSqdFWtG" version="14.6.0" type="github">
+  <diagram id="9oSQ4j19q1RiSqhT4-i-" name="Page-1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CafPod4dmRvEGfZJg68V-2" value="Provincia" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="160" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-3" value="-nombre: String&#xa;-id_pais: Long&#xa;-id : Long" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CafPod4dmRvEGfZJg68V-2">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="CafPod4dmRvEGfZJg68V-2">
+          <mxGeometry y="80" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-5" value="+ getters y setters" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CafPod4dmRvEGfZJg68V-2">
+          <mxGeometry y="88" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="CafPod4dmRvEGfZJg68V-6" target="CafPod4dmRvEGfZJg68V-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-6" value="&lt;&lt;interface&gt;&gt;ProvinciaService" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="340" width="180" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-7" value="buscarPorId(id: long) : Provincia&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CafPod4dmRvEGfZJg68V-6">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-10" value="ProvinciaServiceImpl" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="188" width="390" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-11" value="-provinciaRepository : ProvinciaRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CafPod4dmRvEGfZJg68V-10">
+          <mxGeometry y="26" width="390" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="CafPod4dmRvEGfZJg68V-10">
+          <mxGeometry y="52" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-13" value="+ ProvinciaServiceImpl (provinciarepository : provinciarepository)&#xa;&#xa;buscarPorId(id: Long) : Provincia&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CafPod4dmRvEGfZJg68V-10">
+          <mxGeometry y="60" width="390" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CafPod4dmRvEGfZJg68V-17" target="CafPod4dmRvEGfZJg68V-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-17" value="&lt;&lt;interface&gt;&gt;ProvinciaRepository" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="770" y="460" width="180" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-21" value="ProvinciaRepositoryDummy" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="450" width="240" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-22" value="+ Optional&lt;Provincia&gt; findById ( Long)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CafPod4dmRvEGfZJg68V-21">
+          <mxGeometry y="26" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="CafPod4dmRvEGfZJg68V-30" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0.996;exitY=0.808;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="CafPod4dmRvEGfZJg68V-22" target="CafPod4dmRvEGfZJg68V-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="500" as="sourcePoint" />
+            <mxPoint x="340" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
